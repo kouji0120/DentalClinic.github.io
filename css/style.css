@@ -1,0 +1,284 @@
+@charset "UFT-8";
+body {
+    margin: 0 auto;
+    padding: 0px 0 0;
+    background: #F6F6F6;
+    color: #515151;
+    font-family: Verdana, Arial, Helvetica, 'meirio', 'メイリオ', 'Hiragino Maru Gothic Pro', 'ヒラギノ丸ゴ Pro W4', Osaka, 'ＭＳ Ｐゴシック', sans-serif;
+    border-top: 8px #6CC6C4 solid;
+}
+
+.all {
+    max-width: 933px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 130px;
+}
+
+
+/*logo  Dental Clinic*/
+
+.header-wrapper a img {
+    /*logo*/
+    margin-top: 50px;
+}
+
+
+/*“地域に根付いた歯科医院” デンタル クリニック*/
+
+.header-title {
+    margin-top: 13px;
+    font-size: 10px;
+}
+
+
+/*tell 03-0000-0000*/
+
+.tell {
+    /*03-0000-0000*/
+    background: url(../images/bgTel.png) no-repeat center left;
+    font-size: 26px;
+    padding: 0 0 0 35px;
+    margin-top: 15px;
+}
+
+
+/*“予約受付時間 10:00～19:30 <span>日祝 休診*/
+.header-right-container .header-bottom {
+    /*予約受付時間 10:00～19:30 <span>日祝 休診*/
+    display: inline-block;
+    padding: 7px 20px;
+    border: .5px #D6D6D6 solid;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.header-right-container span {
+    color: #CA6600;
+}
+
+
+/*.main-nav トップページ*/
+.main-nav {/*header ul*/
+    display: flex;
+    list-style: none;
+    background-image: linear-gradient(rgb(156, 227, 225) 0%, rgb(100, 198, 196) 100%);
+    border-radius: 5px;
+    border: 1px solid #6CC6C4; 
+}
+
+.main-nav li {/*header li*/
+    display: block;
+    height: 73px;
+    width: 20%;
+    text-align: center;
+}
+.main-nav .Rounded-corner-2,.Rounded-corner-3,.Rounded-corner-4,.Rounded-corner-5{
+    border-left: 1px solid #99E1DF;/*nav li要素の左borderLine*/
+}
+
+.main-nav li a {/*header a*/
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #6CC6C4;
+}
+.main-nav li a span:first-child {
+    font-size: 14px;
+}
+
+.main-nav li a span:last-child {
+    font-size: 10px;
+}
+
+.main-nav li a span:first-child {/*トップページ　HOME*/
+    margin-top: 20px;
+    display: inline-block;
+}
+/*nav hover時*/
+.main-nav li a:hover{
+    background-image: linear-gradient(rgb(108, 198, 196) 0%, rgb(156, 227, 225) 100%);
+    text-shadow: 1px 1px 2px #6CC6C4;
+    border-right: #71C9C7 solid 1px;
+    border-left: #99E1DF solid 1px;
+    color: rgb(193,255,245);
+}
+.main-nav .Rounded-corner-1:hover{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+}
+.main-nav .Rounded-corner-5:hover{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+}
+
+
+.main-contents{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+aside{
+    width: 28%;
+}
+article{
+    width: 70%;
+}
+
+/*aside部分*/
+aside .h2-wrapper{
+    background-image: linear-gradient(rgb(156, 227, 225) 0%, rgb(100, 198, 196) 100%);
+    cursor: default;
+}
+aside h2{
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 10px 0 10px 11px;
+}
+
+
+aside li{
+    position: relative;/*♦markerの親要素*/
+    list-style: none;
+    padding: 0 0 0 11%;
+    margin: 0 12px;
+    border-bottom: 1px solid #6CC6C4;
+}
+aside a{
+    text-decoration: none;
+    color: #595959;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    height: 40px;
+    padding: 10px 0;
+    width: 100%;
+}
+aside a:hover{
+    color: #6cc6c4;
+}
+aside li:before {/*♦marker*/
+    content: "";
+    position: absolute;
+    top: .4em;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: #6CC6C4;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: 10px 0 10px 13px;
+}
+
+.aside-wrapper{
+    border: 1px solid #6CC6C4;
+    border-top-right-radius:5px;
+    border-top-left-radius:5px;
+    padding-bottom: 20px;
+    background-color:#FFFFFF ; 
+    
+}
+.aside-wrapper:last-child{
+    margin-top: 30px;
+}
+
+
+
+/*article部分*/
+article img{
+    width: 100%;
+}
+.white-background{
+    background-color:#FFFFFF; 
+    padding: 37px 22px 44px 22px;
+}
+h3{/*新着情報*/
+    border-bottom: 3px solid #6CC6C4;
+    margin-bottom:14px ;
+    cursor: default;
+}
+h4{
+    white-space: nowrap;
+    margin-right: 15px;
+}
+.main-right-contents{
+    display: flex;
+    border-bottom: 1px solid #cccccc;
+    padding: 14px 0;
+    margin: 0 2% 0 2% ;
+}
+
+.main-right-contents h4,p{
+    font-size: 13px;
+    color: #515151;
+    line-height: 20px;
+    cursor: default;
+}
+.main-right-contents p{
+    font-weight: 400;
+    padding: 0 2%;
+}
+
+
+
+
+.footer-nav ul{
+    display: flex;
+    background-color: #6CC6C4;
+    border-radius: 5px;
+    height: 31px;
+    margin-top: 21px;
+}
+.footer-nav ul li{
+    padding-left: 44px;
+    list-style: none;
+    position: relative;
+    margin-top: 4px;
+}
+.footer-nav ul li a{
+    color: #FFFFFF;
+    font-size: 13px;
+    text-decoration: none;
+  
+}
+.footer-nav ul li a:hover{
+    text-decoration: underline ;
+}
+.footer-nav li::after{/*marker ◎*/
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    margin-top: -7px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #feffff;
+    border-radius: 100%;
+    box-sizing:border-box;
+}
+
+
+
+
+
+footer p{
+    text-align: right;
+    margin: 16px 0;
+}
+.footer-bottom{
+    border-top: 2px solid #6CC6C4;
+}
+.footer-bottom p{
+    text-align: center;
+}
